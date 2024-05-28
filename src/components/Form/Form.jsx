@@ -11,7 +11,7 @@ function Randvoorwaarden() {
     }
     return (
         <form onSubmit={handleSubmit} className="Randvoorwaarden">
-            yy<label htmlFor="voornaam">Voornaam</label>
+            <label htmlFor="voornaam">Voornaam</label>
             <input type="text" id="voornaam" name="voornaam" required/>
 
             <label htmlFor="achternaam">Achternaam</label>
@@ -28,7 +28,7 @@ function Randvoorwaarden() {
                 Wekelijks
             </label>
             <label>
-                <input type="checkbox" name="frequentie" value="maandelijks"/>
+                <input type="dropdown" name="frequentie" value="maandelijks"/>
                 Maandelijks
             </label>
 
