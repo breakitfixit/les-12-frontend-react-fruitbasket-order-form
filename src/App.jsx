@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css'
 import FruitCounter from './components/Fruitcounter/FruitCounter.jsx';
-
+import Randvoorwaarden from './components/Form/Form.jsx';
 function App() {
 
 
@@ -100,6 +100,9 @@ function App() {
                 verlaag={() => verlaag(setKiwis, kiwis)}
             />
             <button className="resetButton" onClick={reset}>Reset</button>
+
+            <Randvoorwaarden />
+
         </>
     );
 }

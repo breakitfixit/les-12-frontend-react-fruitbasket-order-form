@@ -1,0 +1,54 @@
+.Randvoorwaarden {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #fffbe6; /* Licht geel als achtergrondkleur */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    margin-top: 10px;
+    font-family: 'Comic Sans MS', cursive, sans-serif; /* Speelse lettertype */
+    font-size: 1.2em;
+    color: #ff6347; /* Tomaat kleur */
+}
+
+input[type="text"],
+input[type="number"],
+input[type="email"] {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 2px solid #ff6347; /* Tomaat kleur */
+    border-radius: 5px;
+    font-family: 'Comic Sans MS', cursive, sans-serif; /* Speelse lettertype */
+    font-size: 1em;
+}
+
+input[type="checkbox"] {
+    margin: 10px 10px 10px 0;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #32cd32; /* Lime groen */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Comic Sans MS', cursive, sans-serif; /* Speelse lettertype */
+    font-size: 1.2em;
+}
+
+button:hover {
+    background-color: #228b22; /* Forest groen voor hover */
+}
+
+form input:focus {
+    outline: none;
+    border-color: #ff4500; /* Orangered voor focus */
+    box-shadow: 0 0 10px rgba(255, 69, 0, 0.5); /* Schaduw voor focus */
+}
