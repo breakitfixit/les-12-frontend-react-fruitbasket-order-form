@@ -101,7 +101,14 @@ function App() {
             />
             <button className="resetButton" onClick={reset}>Reset</button>
 
-            <Randvoorwaarden />
+            {/*<Randvoorwaarden />*/}
+            {/*//Fruitaantallen waarde toegevoegd aan randvoorwaarden */}
+            <Randvoorwaarden
+                bananen={bananen}
+                aardbeien={aardbeien}
+                appels={appels}
+                kiwis={kiwis}
+            />
 
         </>
     );

@@ -1,12 +1,19 @@
 import React from 'react';
 import './Form.css';
 
-function Randvoorwaarden() {
+function Randvoorwaarden({bananen, aardbeien, appels, kiwis}) {
     const handleSubmit = (event) => {
         event.preventDefault();
         const formData = new FormData(event.target);
         const data = Object.fromEntries(formData);
-        console.log(data);
+        // Voeg de fruitaantallen toe aan de log
+        const fruitData = {
+            bananen,
+            aardbeien,
+            appels,
+            kiwis
+        };
+        console.log({ ...data, ...fruitData });
 
     }
     return (
