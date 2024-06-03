@@ -23,14 +23,30 @@ function Randvoorwaarden() {
             <label htmlFor="postcode">Postcode</label>
             <input type="text" id="postcode" name="postcode" required/>
 
-            <label>
-                <input type="checkbox" name="frequentie" value="wekelijks"/>
-                Wekelijks
-            </label>
-            <label>
-                <input type="dropdown" name="frequentie" value="maandelijks"/>
-                Maandelijks
-            </label>
+            <label htmlFor="frequentie">Frequentie</label>
+            <select name="frequentie" id="frequentie">
+                <option value="iedere week">Iedere week</option>
+                <option value="om de week">Om de week</option>
+                <option value="iedere maand">Iedere maand</option>
+            </select>
+
+            <label htmlFor="bezorgtijd">Bezorgtijd</label>
+            <div>
+                <input type="radio" id="overdag" name="bezorgtijd" value="overdag"/>
+                <label htmlFor="overdag">Overdag</label>
+
+                <input type="radio" id="avond" name="bezorgtijd" value="avond"/>
+                <label htmlFor="avond">Avond</label>
+            </div>
+
+            <label htmlFor="opmerking">Opmerking</label>
+            <textarea id="opmerking" name="opmerking" rows="4"></textarea>
+
+            <div className="terms">
+            <input type="checkbox" id="akkoord" name="akkoord" required/>
+            <label htmlFor="akkoord">Ik ga akkoord met de algemene voorwaarden</label>
+            </div>
+
 
             <button type={"submit"}>Verzenden</button>
 
